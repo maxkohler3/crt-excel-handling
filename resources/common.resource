@@ -8,6 +8,7 @@ Library                 ../libraries/GitOperations.py
 ${BROWSER}              chrome
 ${webshop}              https://qentinelqi.github.io/shop/
 ${excel_worksheet}      ${CURDIR}/../data/products_worksheet.xlsx
+${git_branch}           main
 
 *** Keywords ***
 Setup Browser
