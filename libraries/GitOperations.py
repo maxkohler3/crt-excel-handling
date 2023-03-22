@@ -25,7 +25,7 @@ class GitOperations(object):
         logger.console(self._data_path)
 
     @keyword
-    def save_changes(self, file_name, git_branch):
+    def commit_and_push(self, file_name, git_branch):
 
         path_to_file = os.path.join(self._data_path, file_name)
 
