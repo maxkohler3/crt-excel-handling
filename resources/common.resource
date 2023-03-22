@@ -16,5 +16,4 @@ Setup Browser
     Evaluate            random.seed()    random    # initialize random generator
 
 End Suite
-    Close All Excel Documents
     Close All Browsers
