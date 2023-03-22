@@ -44,4 +44,5 @@ Update Product Id
     Should Be Equal As Strings    ${new_id}    ${updated_id}
 
     # Save changes to excel and commit to git
-    # TODO
+    Save Excel Document  ${excel_worksheet}
+    Commit And Push     ${excel_worksheet}     ${git_branch}
