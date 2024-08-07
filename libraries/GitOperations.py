@@ -14,14 +14,14 @@ class GitOperations(object):
 
         # SCRIPTS env variable contains the suite name (except locally)
         if self._project_name != "None":
-            if self._project_path == "/home/services/suite/tests":
+            if self._project_path == "/home/services/suite/Tests/Accounts":
                 # We are in live testing and project name is not in project path
                 self._project_path = os.path.join("/home/services/suite/")
             else:
                 self._project_path = os.path.join(os.getcwd(), self._project_name)
 
         logger.console(self._project_path)
-        self._data_path = os.path.join(self._project_path, "data/")
+        self._data_path = os.path.join(self._project_path, "Test Data/")
         logger.console(self._data_path)
 
     @keyword
